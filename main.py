@@ -7,11 +7,11 @@ import torch.optim as optim
 import torch.utils.data
 import torch.nn.functional as F
 import time
-from dataloader import listflowfile as lt
-from dataloader import SecenFlowLoader as DA
-import utils.logger as logger
+from AnyNet.dataloader import listflowfile as lt
+from AnyNet.dataloader import SecenFlowLoader as DA
+import AnyNet.utils.logger as logger
 
-import models.anynet
+import AnyNet.models.anynet
 
 parser = argparse.ArgumentParser(description='AnyNet with Flyingthings3d')
 parser.add_argument('--maxdisp', type=int, default=192, help='maxium disparity')
