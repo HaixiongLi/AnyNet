@@ -7,11 +7,11 @@ import torch.optim as optim
 import torch.utils.data
 import torch.nn.functional as F
 import time
-from AnyNet.dataloader import listflowfile as lt
-from AnyNet.dataloader import SecenFlowLoader as DA
-import AnyNet.utils.logger as logger
+from dataloader import listflowfile as lt
+from dataloader import SecenFlowLoader as DA
+import utils.logger as logger
 
-import AnyNet.models.anynet
+import models.anynet
 
 parser = argparse.ArgumentParser(description='AnyNet with Flyingthings3d')
 parser.add_argument('--maxdisp', type=int, default=192, help='maxium disparity')
@@ -75,8 +75,8 @@ def main():
             log.info("=> loading checkpoint '{}'".format(args.resume))
             checkpoint = torch.load(args.resume)
             args.start_epoch = checkpoint['epoch']
-            model.load_state_dict(checkpoint['state_dict'])
-            optimizer.load_state_dict(checkpoint['optimizer'])
+            model.load_state_dict(checkpoint['state_dict'])     #模型加载
+            optimizer.load_state_dict(checkpoint['optimizer'])      #优化器加载
             log.info("=> loaded checkpoint '{}' (epoch {})"
                      .format(args.resume, checkpoint['epoch']))
         else:
@@ -89,7 +89,7 @@ def main():
     for epoch in range(args.start_epoch, args.epochs):
         log.info('This is {}-th epoch'.format(epoch))
 
-        train(TrainImgLoader, model, optimizer, log, epoch)
+        train(TrainImgLoader, model, optimizer, log, epoch)     #开始进行模型训练
 
         savefilename = args.save_path + '/checkpoint.tar'
         torch.save({
