@@ -105,7 +105,7 @@ def main():
 def train(dataloader, model, optimizer, log, epoch=0):
 
     stages = 3 + args.with_spn
-    losses = [AverageMeter() for _ in range(stages)]
+    losses = [AverageMeter() for _ in range(stages)]        #？？
     length_loader = len(dataloader)
 
     model.train()
@@ -119,7 +119,7 @@ def train(dataloader, model, optimizer, log, epoch=0):
         mask = disp_L < args.maxdisp
         if mask.float().sum() == 0:
             continue
-        mask.detach_()
+        mask.detach_()          #截断反向传播的梯度流
         outputs = model(imgL, imgR)
         outputs = [torch.squeeze(output, 1) for output in outputs]
         loss = [args.loss_weights[x] * F.smooth_l1_loss(outputs[x][mask], disp_L[mask], size_average=True)
