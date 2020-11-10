@@ -105,13 +105,13 @@ class AnyNet(nn.Module):
         for i in range(0, maxdisp, stride):
             cost[:, i//stride, :, :i] = feat_l[:, :, :, :i].abs().sum(1)
             if i > 0:
-                cost[:, i//stride, :, i:] = torch.norm(feat_l[:, :, :, i:] - feat_r[:, :, :, :-i], 1, 1)
+                cost[:, i//stride, :, i:] = torch.norm(feat_l[:, :, :, i:] - feat_r[:, :, :, :-i], 1, 1)    #按一维度求一范数
             else:
                 cost[:, i//stride, :, i:] = torch.norm(feat_l[:, :, :, :] - feat_r[:, :, :, :], 1, 1)
 
         return cost.contiguous()
 
-    def _build_volume_2d3(self, feat_l, feat_r, maxdisp, disp, stride=1):
+    def _build_volume_2d3(self, feat_l, feat_r, maxdisp, disp, stride=1):       #TODO ?
         size = feat_l.size()
         batch_disp = disp[:,None,:,:,:].repeat(1, maxdisp*2-1, 1, 1, 1).view(-1,1,size[-2], size[-1])
         batch_shift = torch.arange(-maxdisp+1, maxdisp, device='cuda').repeat(size[0])[:,None,None,None] * stride
@@ -126,7 +126,6 @@ class AnyNet(nn.Module):
     def forward(self, left, right):
 
         img_size = left.size()
-
         feats_l = self.feature_extraction(left)
         feats_r = self.feature_extraction(right)
         pred = []

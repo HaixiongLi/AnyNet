@@ -10,7 +10,7 @@ def is_image_file(filename):
     return any(filename.endswith(extension) for extension in IMG_EXTENSIONS)
 
 
-def dataloader(filepath, log, split_file):
+def dataloader(filepath):
     left_fold = 'image_2/'
     right_fold = 'image_3/'
     disp_L = 'disp_occ_0/'
