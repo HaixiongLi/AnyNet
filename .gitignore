@@ -1,6 +1,11 @@
 /checkpoint
+<<<<<<< HEAD
 /results
 /runs
 /output
 __pycache__/
 *.log
+=======
+/output
+__pycache__/
+>>>>>>> 0a403049f202a4da4766ccf0f9427a90b96c681e

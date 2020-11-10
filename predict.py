@@ -38,7 +38,11 @@ parser.add_argument('--resume', type=str, default=None,
                     help='resume path')
 parser.add_argument('--lr', type=float, default=5e-4,
                     help='learning rate')
+<<<<<<< HEAD
 parser.add_argument('--with_spn', action='store_true', help='with spn network or not')
+=======
+parser.add_argument('--with_spn', default=1, action='store_true', help='with spn network or not')
+>>>>>>> 0a403049f202a4da4766ccf0f9427a90b96c681e
 parser.add_argument('--print_freq', type=int, default=5, help='print frequence')
 parser.add_argument('--init_channels', type=int, default=1, help='initial channels for 2d feature extractor')
 parser.add_argument('--nblocks', type=int, default=2, help='number of layers in each stage')
@@ -47,9 +51,13 @@ parser.add_argument('--layers_3d', type=int, default=4, help='number of initial 
 parser.add_argument('--growth_rate', type=int, nargs='+', default=[4,1,1], help='growth rate in the 3d network')
 parser.add_argument('--spn_init_channels', type=int, default=8, help='initial channels for spnet')
 parser.add_argument('--start_epoch_for_spn', type=int, default=121)
+<<<<<<< HEAD
 # parser.add_argument('--pretrained', type=str, default='/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar',
 #                     help='pretrained model path')
 parser.add_argument('--pretrained', type=str, default='/home/lab3/work/lhx/code/AnyNet/results/pretrained_anynet/checkpoint.tar',
+=======
+parser.add_argument('--pretrained', type=str, default='/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar',
+>>>>>>> 0a403049f202a4da4766ccf0f9427a90b96c681e
                     help='pretrained model path')
 parser.add_argument('--split_file', type=str, default=None)
 parser.add_argument('--evaluate', action='store_true')
@@ -58,7 +66,11 @@ parser.add_argument('--evaluate', action='store_true')
 # Modified by NK
 parser.add_argument('--left_images', type=str, default='/home/lab3/work/lhx/data/kitti2015/testing/image_2/')
 parser.add_argument('--right_images', type=str, default='/home/lab3/work/lhx/data/kitti2015/testing/image_3/')
+<<<<<<< HEAD
 parser.add_argument('--save_dir', type=str, default='/home/lab3/work/lhx/data/kitti2015/testing/result_owntrain/')
+=======
+parser.add_argument('--save_dir', type=str, default='/home/lab3/work/lhx/data/kitti2015/testing/result/')
+>>>>>>> 0a403049f202a4da4766ccf0f9427a90b96c681e
 parser.add_argument('--print_avg_time', action='store_true', help='avg prediction time')
 
 args = parser.parse_args()

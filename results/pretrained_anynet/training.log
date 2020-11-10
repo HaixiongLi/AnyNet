@@ -1,0 +1,657 @@
+[2020-11-09 16:52:30 main.py:67] INFO     channels_3d: 4
+[2020-11-09 16:52:31 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 16:52:32 main.py:67] INFO     epochs: 10
+[2020-11-09 16:52:34 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 16:52:37 main.py:67] INFO     init_channels: 1
+[2020-11-09 16:52:37 main.py:67] INFO     layers_3d: 4
+[2020-11-09 16:52:37 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 16:52:37 main.py:67] INFO     lr: 0.0005
+[2020-11-09 16:52:37 main.py:67] INFO     maxdisp: 192
+[2020-11-09 16:52:37 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 16:52:37 main.py:67] INFO     nblocks: 2
+[2020-11-09 16:52:37 main.py:67] INFO     print_freq: 5
+[2020-11-09 16:52:37 main.py:67] INFO     resume: None
+[2020-11-09 16:52:37 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 16:52:37 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 16:52:37 main.py:67] INFO     test_bsize: 4
+[2020-11-09 16:52:37 main.py:67] INFO     train_bsize: 6
+[2020-11-09 16:52:37 main.py:67] INFO     with_spn: False
+[2020-11-09 17:31:50 main.py:67] INFO     channels_3d: 4
+[2020-11-09 17:31:50 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 17:31:50 main.py:67] INFO     epochs: 10
+[2020-11-09 17:31:50 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 17:31:50 main.py:67] INFO     init_channels: 1
+[2020-11-09 17:31:50 main.py:67] INFO     layers_3d: 4
+[2020-11-09 17:31:50 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 17:31:50 main.py:67] INFO     lr: 0.0005
+[2020-11-09 17:31:50 main.py:67] INFO     maxdisp: 192
+[2020-11-09 17:31:50 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 17:31:50 main.py:67] INFO     nblocks: 2
+[2020-11-09 17:31:50 main.py:67] INFO     print_freq: 5
+[2020-11-09 17:31:50 main.py:67] INFO     resume: None
+[2020-11-09 17:31:50 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 17:31:50 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 17:31:50 main.py:67] INFO     test_bsize: 4
+[2020-11-09 17:31:50 main.py:67] INFO     train_bsize: 6
+[2020-11-09 17:31:50 main.py:67] INFO     with_spn: False
+[2020-11-09 17:31:58 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 17:31:58 main.py:88] INFO     Not Resume
+[2020-11-09 17:31:58 main.py:92] INFO     This is 0-th epoch
+[2020-11-09 17:34:15 main.py:67] INFO     channels_3d: 4
+[2020-11-09 17:34:15 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 17:34:15 main.py:67] INFO     epochs: 10
+[2020-11-09 17:34:15 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 17:34:15 main.py:67] INFO     init_channels: 1
+[2020-11-09 17:34:15 main.py:67] INFO     layers_3d: 4
+[2020-11-09 17:34:15 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 17:34:15 main.py:67] INFO     lr: 0.0005
+[2020-11-09 17:34:15 main.py:67] INFO     maxdisp: 192
+[2020-11-09 17:34:15 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 17:34:15 main.py:67] INFO     nblocks: 2
+[2020-11-09 17:34:15 main.py:67] INFO     print_freq: 5
+[2020-11-09 17:34:15 main.py:67] INFO     resume: None
+[2020-11-09 17:34:15 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 17:34:15 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 17:34:15 main.py:67] INFO     test_bsize: 4
+[2020-11-09 17:34:15 main.py:67] INFO     train_bsize: 4
+[2020-11-09 17:34:15 main.py:67] INFO     with_spn: False
+[2020-11-09 17:34:19 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 17:34:19 main.py:88] INFO     Not Resume
+[2020-11-09 17:34:19 main.py:92] INFO     This is 0-th epoch
+[2020-11-09 17:40:22 main.py:67] INFO     channels_3d: 4
+[2020-11-09 17:40:22 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 17:40:22 main.py:67] INFO     epochs: 10
+[2020-11-09 17:40:22 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 17:40:22 main.py:67] INFO     init_channels: 1
+[2020-11-09 17:40:22 main.py:67] INFO     layers_3d: 4
+[2020-11-09 17:40:22 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 17:40:22 main.py:67] INFO     lr: 0.0005
+[2020-11-09 17:40:22 main.py:67] INFO     maxdisp: 192
+[2020-11-09 17:40:22 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 17:40:22 main.py:67] INFO     nblocks: 2
+[2020-11-09 17:40:22 main.py:67] INFO     print_freq: 5
+[2020-11-09 17:40:22 main.py:67] INFO     resume: None
+[2020-11-09 17:40:22 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 17:40:22 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 17:40:22 main.py:67] INFO     test_bsize: 4
+[2020-11-09 17:40:22 main.py:67] INFO     train_bsize: 4
+[2020-11-09 17:40:22 main.py:67] INFO     with_spn: False
+[2020-11-09 17:40:44 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 17:40:48 main.py:88] INFO     Not Resume
+[2020-11-09 17:40:50 main.py:92] INFO     This is 0-th epoch
+[2020-11-09 17:41:24 main.py:67] INFO     channels_3d: 4
+[2020-11-09 17:41:24 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 17:41:24 main.py:67] INFO     epochs: 10
+[2020-11-09 17:41:24 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 17:41:24 main.py:67] INFO     init_channels: 1
+[2020-11-09 17:41:24 main.py:67] INFO     layers_3d: 4
+[2020-11-09 17:41:24 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 17:41:24 main.py:67] INFO     lr: 0.0005
+[2020-11-09 17:41:24 main.py:67] INFO     maxdisp: 192
+[2020-11-09 17:41:24 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 17:41:24 main.py:67] INFO     nblocks: 2
+[2020-11-09 17:41:24 main.py:67] INFO     print_freq: 5
+[2020-11-09 17:41:24 main.py:67] INFO     resume: None
+[2020-11-09 17:41:24 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 17:41:24 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 17:41:24 main.py:67] INFO     test_bsize: 4
+[2020-11-09 17:41:24 main.py:67] INFO     train_bsize: 4
+[2020-11-09 17:41:24 main.py:67] INFO     with_spn: False
+[2020-11-09 17:41:28 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 17:41:28 main.py:88] INFO     Not Resume
+[2020-11-09 17:41:28 main.py:92] INFO     This is 0-th epoch
+[2020-11-09 18:43:44 main.py:67] INFO     channels_3d: 4
+[2020-11-09 18:43:44 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 18:43:44 main.py:67] INFO     epochs: 10
+[2020-11-09 18:43:44 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 18:43:44 main.py:67] INFO     init_channels: 1
+[2020-11-09 18:43:44 main.py:67] INFO     layers_3d: 4
+[2020-11-09 18:43:44 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 18:43:44 main.py:67] INFO     lr: 0.0005
+[2020-11-09 18:43:44 main.py:67] INFO     maxdisp: 192
+[2020-11-09 18:43:44 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 18:43:44 main.py:67] INFO     nblocks: 2
+[2020-11-09 18:43:44 main.py:67] INFO     print_freq: 5
+[2020-11-09 18:43:44 main.py:67] INFO     resume: None
+[2020-11-09 18:43:44 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 18:43:44 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 18:43:44 main.py:67] INFO     test_bsize: 4
+[2020-11-09 18:43:44 main.py:67] INFO     train_bsize: 4
+[2020-11-09 18:43:44 main.py:67] INFO     with_spn: False
+[2020-11-09 18:43:48 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 18:43:48 main.py:88] INFO     Not Resume
+[2020-11-09 18:43:48 main.py:92] INFO     This is 0-th epoch
+[2020-11-09 18:46:20 main.py:67] INFO     channels_3d: 4
+[2020-11-09 18:46:20 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 18:46:20 main.py:67] INFO     epochs: 10
+[2020-11-09 18:46:20 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 18:46:20 main.py:67] INFO     init_channels: 1
+[2020-11-09 18:46:20 main.py:67] INFO     layers_3d: 4
+[2020-11-09 18:46:20 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 18:46:20 main.py:67] INFO     lr: 0.0005
+[2020-11-09 18:46:20 main.py:67] INFO     maxdisp: 192
+[2020-11-09 18:46:20 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 18:46:20 main.py:67] INFO     nblocks: 2
+[2020-11-09 18:46:20 main.py:67] INFO     print_freq: 5
+[2020-11-09 18:46:20 main.py:67] INFO     resume: None
+[2020-11-09 18:46:20 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 18:46:20 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 18:46:20 main.py:67] INFO     test_bsize: 4
+[2020-11-09 18:46:20 main.py:67] INFO     train_bsize: 4
+[2020-11-09 18:46:20 main.py:67] INFO     with_spn: False
+[2020-11-09 18:46:23 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 18:46:23 main.py:88] INFO     Not Resume
+[2020-11-09 18:46:23 main.py:92] INFO     This is 0-th epoch
+[2020-11-09 19:04:27 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:04:28 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:04:29 main.py:67] INFO     epochs: 10
+[2020-11-09 19:04:29 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:04:30 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:04:30 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:04:30 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:04:31 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:04:31 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:04:32 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:04:32 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:04:32 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:04:33 main.py:67] INFO     resume: None
+[2020-11-09 19:04:33 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:04:34 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:04:34 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:04:35 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:04:36 main.py:67] INFO     with_spn: False
+[2020-11-09 19:04:42 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:07:02 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:07:02 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:07:02 main.py:67] INFO     epochs: 10
+[2020-11-09 19:07:02 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:07:02 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:07:02 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:07:02 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:07:02 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:07:02 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:07:02 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:07:02 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:07:02 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:07:02 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/sceneflow/sceneflow.tar
+[2020-11-09 19:07:02 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:07:02 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:07:02 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:07:02 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:07:02 main.py:67] INFO     with_spn: False
+[2020-11-09 19:07:11 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:07:14 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/sceneflow/sceneflow.tar'
+[2020-11-09 19:08:28 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:08:28 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:08:28 main.py:67] INFO     epochs: 10
+[2020-11-09 19:08:28 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:08:28 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:08:28 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:08:28 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:08:28 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:08:28 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:08:28 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:08:28 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:08:28 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:08:28 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:08:28 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:08:28 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:08:28 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:08:28 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:08:28 main.py:67] INFO     with_spn: False
+[2020-11-09 19:08:35 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:08:37 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:10:08 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:10:08 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:10:08 main.py:67] INFO     epochs: 10
+[2020-11-09 19:10:08 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:10:08 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:10:08 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:10:08 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:10:08 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:10:08 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:10:08 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:10:08 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:10:08 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:10:08 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:10:08 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:10:08 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:10:08 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:10:08 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:10:08 main.py:67] INFO     with_spn: False
+[2020-11-09 19:10:18 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:10:19 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:13:34 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:13:34 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:13:34 main.py:67] INFO     epochs: 10
+[2020-11-09 19:13:34 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:13:34 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:13:34 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:13:34 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:13:34 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:13:34 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:13:34 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:13:34 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:13:34 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:13:34 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:13:34 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:13:34 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:13:34 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:13:34 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:13:34 main.py:67] INFO     with_spn: False
+[2020-11-09 19:13:37 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:13:58 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:25:17 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:25:17 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:25:17 main.py:67] INFO     epochs: 10
+[2020-11-09 19:25:17 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:25:17 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:25:17 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:25:17 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:25:17 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:25:17 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:25:17 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:25:17 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:25:17 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:25:17 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:25:17 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:25:17 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:25:17 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:25:17 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:25:17 main.py:67] INFO     with_spn: False
+[2020-11-09 19:25:21 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:25:25 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:27:07 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:27:07 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:27:07 main.py:67] INFO     epochs: 10
+[2020-11-09 19:27:07 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:27:07 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:27:07 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:27:07 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:27:07 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:27:07 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:27:07 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:27:07 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:27:07 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:27:07 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:27:07 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:27:07 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:27:07 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:27:07 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:27:07 main.py:67] INFO     with_spn: False
+[2020-11-09 19:27:11 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:27:11 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:35:58 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:35:58 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:35:58 main.py:67] INFO     epochs: 10
+[2020-11-09 19:35:58 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:35:58 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:35:58 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:35:58 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:35:58 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:35:58 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:35:58 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:35:58 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:35:58 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:35:58 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:35:58 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:35:58 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:35:58 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:35:58 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:35:58 main.py:67] INFO     with_spn: False
+[2020-11-09 19:36:26 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:36:26 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:36:26 main.py:67] INFO     epochs: 10
+[2020-11-09 19:36:26 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:36:26 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:36:26 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:36:26 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:36:26 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:36:26 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:36:26 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:36:26 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:36:26 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:36:26 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:36:26 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:36:26 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:36:26 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:36:26 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:36:26 main.py:67] INFO     with_spn: False
+[2020-11-09 19:40:23 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:40:23 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:40:23 main.py:67] INFO     epochs: 10
+[2020-11-09 19:40:23 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:40:23 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:40:23 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:40:23 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:40:23 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:40:23 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:40:23 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:40:23 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:40:23 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:40:23 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:40:23 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:40:23 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:40:23 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:40:23 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:40:23 main.py:67] INFO     with_spn: False
+[2020-11-09 19:42:59 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:42:59 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:42:59 main.py:67] INFO     epochs: 10
+[2020-11-09 19:42:59 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:42:59 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:42:59 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:42:59 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:42:59 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:42:59 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:42:59 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:42:59 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:42:59 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:42:59 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:42:59 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:42:59 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:42:59 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:42:59 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:42:59 main.py:67] INFO     with_spn: False
+[2020-11-09 19:43:02 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:43:02 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:43:02 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:43:31 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:43:31 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:43:31 main.py:67] INFO     epochs: 10
+[2020-11-09 19:43:31 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:43:31 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:43:31 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:43:31 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:43:31 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:43:31 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:43:31 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:43:31 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:43:31 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:43:31 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:43:31 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:43:31 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:43:31 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:43:31 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:43:31 main.py:67] INFO     with_spn: False
+[2020-11-09 19:43:34 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:43:34 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:44:05 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:44:05 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:44:05 main.py:67] INFO     epochs: 10
+[2020-11-09 19:44:05 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:44:05 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:44:05 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:44:05 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:44:05 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:44:05 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:44:05 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:44:05 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:44:05 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:44:05 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:44:05 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:44:05 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:44:05 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:44:05 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:44:05 main.py:67] INFO     with_spn: False
+[2020-11-09 19:44:08 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:44:08 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:44:08 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:48:04 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:48:04 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:48:04 main.py:67] INFO     epochs: 10
+[2020-11-09 19:48:04 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:48:04 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:48:04 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:48:04 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:48:04 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:48:04 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:48:04 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:48:04 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:48:04 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:48:04 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:48:04 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:48:04 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:48:04 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:48:04 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:48:04 main.py:67] INFO     with_spn: False
+[2020-11-09 19:48:14 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:48:14 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:48:14 main.py:67] INFO     epochs: 10
+[2020-11-09 19:48:14 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:48:14 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:48:14 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:48:14 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:48:14 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:48:14 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:48:14 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:48:14 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:48:14 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:48:14 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:48:14 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:48:14 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:48:14 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:48:14 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:48:14 main.py:67] INFO     with_spn: False
+[2020-11-09 19:48:18 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:48:18 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:48:18 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:48:48 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:48:48 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:48:48 main.py:67] INFO     epochs: 10
+[2020-11-09 19:48:48 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:48:48 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:48:48 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:48:48 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:48:48 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:48:48 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:48:48 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:48:48 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:48:48 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:48:48 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:48:48 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:48:48 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:48:48 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:48:48 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:48:48 main.py:67] INFO     with_spn: False
+[2020-11-09 19:48:51 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:48:51 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:48:51 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:51:06 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:51:06 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:51:06 main.py:67] INFO     epochs: 309
+[2020-11-09 19:51:06 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:51:06 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:51:06 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:51:06 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:51:06 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:51:06 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:51:06 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:51:06 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:51:06 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:51:06 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:51:06 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:51:06 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:51:06 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:51:06 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:51:06 main.py:67] INFO     with_spn: False
+[2020-11-09 19:51:08 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:51:08 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:51:08 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:51:12 main.py:92] INFO     This is 299-th epoch
+[2020-11-09 19:51:43 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:51:43 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:51:43 main.py:67] INFO     epochs: 309
+[2020-11-09 19:51:43 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:51:43 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:51:43 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:51:43 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:51:43 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:51:43 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:51:43 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:51:43 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:51:43 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:51:43 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:51:43 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:51:43 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:51:43 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:51:43 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:51:43 main.py:67] INFO     with_spn: False
+[2020-11-09 19:51:45 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:51:45 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:51:45 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:51:45 main.py:92] INFO     This is 299-th epoch
+[2020-11-09 19:52:05 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:52:05 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:52:05 main.py:67] INFO     epochs: 309
+[2020-11-09 19:52:05 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:52:05 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:52:05 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:52:05 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:52:05 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:52:05 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:52:05 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:52:05 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:52:05 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:52:05 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:52:05 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:52:05 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:52:05 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:52:05 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:52:05 main.py:67] INFO     with_spn: False
+[2020-11-09 19:52:07 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:52:07 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:52:07 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:52:07 main.py:92] INFO     This is 299-th epoch
+[2020-11-09 19:52:46 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:52:46 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:52:46 main.py:67] INFO     epochs: 309
+[2020-11-09 19:52:46 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:52:46 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:52:46 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:52:46 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:52:46 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:52:46 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:52:46 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:52:46 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:52:46 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:52:46 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:52:46 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:52:46 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:52:46 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:52:46 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:52:46 main.py:67] INFO     with_spn: False
+[2020-11-09 19:52:48 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:52:48 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:52:48 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:52:50 main.py:92] INFO     This is 299-th epoch
+[2020-11-09 19:54:57 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:54:57 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:54:57 main.py:67] INFO     epochs: 309
+[2020-11-09 19:54:57 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:54:57 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:54:57 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:54:57 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:54:57 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:54:57 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:54:57 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:54:57 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:54:57 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:54:57 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:54:57 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:54:57 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:54:57 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:54:57 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:54:57 main.py:67] INFO     with_spn: False
+[2020-11-09 19:55:50 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:55:50 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:55:50 main.py:67] INFO     epochs: 309
+[2020-11-09 19:55:50 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:55:50 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:55:50 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:55:50 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:55:50 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:55:50 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:55:50 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:55:50 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:55:50 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:55:50 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:55:50 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:55:50 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:55:50 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:55:50 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:55:50 main.py:67] INFO     with_spn: False
+[2020-11-09 19:55:53 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:55:53 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:55:53 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:55:53 main.py:92] INFO     This is 299-th epoch
+[2020-11-09 19:57:27 main.py:67] INFO     channels_3d: 4
+[2020-11-09 19:57:27 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 19:57:27 main.py:67] INFO     epochs: 309
+[2020-11-09 19:57:27 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 19:57:27 main.py:67] INFO     init_channels: 1
+[2020-11-09 19:57:27 main.py:67] INFO     layers_3d: 4
+[2020-11-09 19:57:27 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 19:57:27 main.py:67] INFO     lr: 0.0005
+[2020-11-09 19:57:27 main.py:67] INFO     maxdisp: 192
+[2020-11-09 19:57:27 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 19:57:27 main.py:67] INFO     nblocks: 2
+[2020-11-09 19:57:27 main.py:67] INFO     print_freq: 5
+[2020-11-09 19:57:27 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 19:57:27 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 19:57:27 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 19:57:27 main.py:67] INFO     test_bsize: 4
+[2020-11-09 19:57:27 main.py:67] INFO     train_bsize: 4
+[2020-11-09 19:57:27 main.py:67] INFO     with_spn: False
+[2020-11-09 19:57:30 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 19:57:30 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 19:57:30 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 19:57:30 main.py:92] INFO     This is 299-th epoch
+[2020-11-09 20:27:14 main.py:67] INFO     channels_3d: 4
+[2020-11-09 20:27:14 main.py:67] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-09 20:27:14 main.py:67] INFO     epochs: 309
+[2020-11-09 20:27:14 main.py:67] INFO     growth_rate: [4, 1, 1]
+[2020-11-09 20:27:14 main.py:67] INFO     init_channels: 1
+[2020-11-09 20:27:14 main.py:67] INFO     layers_3d: 4
+[2020-11-09 20:27:14 main.py:67] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-09 20:27:14 main.py:67] INFO     lr: 0.0005
+[2020-11-09 20:27:14 main.py:67] INFO     maxdisp: 192
+[2020-11-09 20:27:14 main.py:67] INFO     maxdisplist: [12, 3, 3]
+[2020-11-09 20:27:14 main.py:67] INFO     nblocks: 2
+[2020-11-09 20:27:14 main.py:67] INFO     print_freq: 5
+[2020-11-09 20:27:14 main.py:67] INFO     resume: /home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar
+[2020-11-09 20:27:14 main.py:67] INFO     save_path: results/pretrained_anynet
+[2020-11-09 20:27:14 main.py:67] INFO     spn_init_channels: 8
+[2020-11-09 20:27:14 main.py:67] INFO     test_bsize: 4
+[2020-11-09 20:27:14 main.py:67] INFO     train_bsize: 4
+[2020-11-09 20:27:14 main.py:67] INFO     with_spn: False
+[2020-11-09 20:27:16 main.py:72] INFO     Number of model parameters: 34629
+[2020-11-09 20:27:16 main.py:77] INFO     => loading checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar'
+[2020-11-09 20:27:16 main.py:83] INFO     => loaded checkpoint '/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar' (epoch 299)
+[2020-11-09 20:27:16 main.py:92] INFO     This is 299-th epoch
+[2020-11-10 09:07:07 KITTIloader2015.py:33] INFO     [ 68  83  23  49  70  18  54  56  97 194 132  31  42  38 112 119  20  85
+   8  24  60  63  27  45 150  14 178  12 140  21   0 111 120  44  17   6
+  98  78 165  90]
+[2020-11-10 09:07:07 main.py:78] INFO     channels_3d: 4
+[2020-11-10 09:07:07 main.py:78] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-10 09:07:07 main.py:78] INFO     datatype: 2015
+[2020-11-10 09:07:07 main.py:78] INFO     epochs: 309
+[2020-11-10 09:07:07 main.py:78] INFO     growth_rate: [4, 1, 1]
+[2020-11-10 09:07:07 main.py:78] INFO     init_channels: 1
+[2020-11-10 09:07:07 main.py:78] INFO     layers_3d: 4
+[2020-11-10 09:07:07 main.py:78] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-10 09:07:07 main.py:78] INFO     lr: 0.0005
+[2020-11-10 09:07:07 main.py:78] INFO     maxdisp: 192
+[2020-11-10 09:07:07 main.py:78] INFO     maxdisplist: [12, 3, 3]
+[2020-11-10 09:07:07 main.py:78] INFO     nblocks: 2
+[2020-11-10 09:07:07 main.py:78] INFO     print_freq: 5
+[2020-11-10 09:07:07 main.py:78] INFO     resume: None
+[2020-11-10 09:07:07 main.py:78] INFO     save_path: results/pretrained_anynet
+[2020-11-10 09:07:07 main.py:78] INFO     split_file: None
+[2020-11-10 09:07:07 main.py:78] INFO     spn_init_channels: 8
+[2020-11-10 09:07:07 main.py:78] INFO     test_bsize: 4
+[2020-11-10 09:07:07 main.py:78] INFO     train_bsize: 4
+[2020-11-10 09:07:07 main.py:78] INFO     with_spn: False
+[2020-11-10 09:07:11 main.py:83] INFO     Number of model parameters: 34629
+[2020-11-10 09:07:11 main.py:99] INFO     Not Resume
+[2020-11-10 09:07:11 main.py:103] INFO     This is 0-th epoch

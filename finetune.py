@@ -107,7 +107,7 @@ def main():
             log.info("=> Will start from scratch.")
     else:
         log.info('Not Resume')
-    cudnn.benchmark = True
+	cudnn.benchmark = True
     start_full_time = time.time()
     if args.evaluate:
         test(TestImgLoader, model, log)
