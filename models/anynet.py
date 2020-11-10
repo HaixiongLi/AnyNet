@@ -13,14 +13,14 @@ class AnyNet(nn.Module):
     def __init__(self, args):
         super(AnyNet, self).__init__()
 
-        self.init_channels = args.init_channels
-        self.maxdisplist = args.maxdisplist
-        self.spn_init_channels = args.spn_init_channels
-        self.nblocks = args.nblocks
-        self.layers_3d = args.layers_3d
-        self.channels_3d = args.channels_3d
-        self.growth_rate = args.growth_rate
-        self.with_spn = args.with_spn
+        self.init_channels = args.init_channels     #1
+        self.maxdisplist = args.maxdisplist         #[12, 3, 3]
+        self.spn_init_channels = args.spn_init_channels     #8
+        self.nblocks = args.nblocks     #2
+        self.layers_3d = args.layers_3d     #4
+        self.channels_3d = args.channels_3d     #4
+        self.growth_rate = args.growth_rate     #[4,1,1]
+        self.with_spn = args.with_spn       #yes
 
         if self.with_spn:
             try:
@@ -30,7 +30,7 @@ class AnyNet(nn.Module):
                 print('Cannot load spn model')
                 sys.exit()
             self.spn_layer = GateRecurrent2dnoind(True,False)
-            spnC = self.spn_init_channels
+            spnC = self.spn_init_channels       #8
             self.refine_spn = [nn.Sequential(
                 nn.Conv2d(3, spnC*2, 3, 1, 1, bias=False),
                 nn.ReLU(inplace=True),
@@ -57,7 +57,7 @@ class AnyNet(nn.Module):
         self.volume_postprocess = nn.ModuleList(self.volume_postprocess)
 
 
-        for m in self.modules():
+        for m in self.modules():        #权重初始化
             if isinstance(m, nn.Conv2d):
                 n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
                 m.weight.data.normal_(0, math.sqrt(2. / n))
@@ -73,7 +73,7 @@ class AnyNet(nn.Module):
             elif isinstance(m, nn.Linear):
                 m.bias.data.zero_()
 
-    def warp(self, x, disp):
+    def warp(self, x, disp):        #根据img2和视差disp估计恢复img1
         """
         warp an image/tensor (im2) back to im1, according to the optical flow
         x: [B, C, H, W] (im2)
@@ -105,13 +105,13 @@ class AnyNet(nn.Module):
         for i in range(0, maxdisp, stride):
             cost[:, i//stride, :, :i] = feat_l[:, :, :, :i].abs().sum(1)
             if i > 0:
-                cost[:, i//stride, :, i:] = torch.norm(feat_l[:, :, :, i:] - feat_r[:, :, :, :-i], 1, 1)
+                cost[:, i//stride, :, i:] = torch.norm(feat_l[:, :, :, i:] - feat_r[:, :, :, :-i], 1, 1)    #按一维度求一范数
             else:
                 cost[:, i//stride, :, i:] = torch.norm(feat_l[:, :, :, :] - feat_r[:, :, :, :], 1, 1)
 
         return cost.contiguous()
 
-    def _build_volume_2d3(self, feat_l, feat_r, maxdisp, disp, stride=1):
+    def _build_volume_2d3(self, feat_l, feat_r, maxdisp, disp, stride=1):       #TODO ?
         size = feat_l.size()
         batch_disp = disp[:,None,:,:,:].repeat(1, maxdisp*2-1, 1, 1, 1).view(-1,1,size[-2], size[-1])
         batch_shift = torch.arange(-maxdisp+1, maxdisp, device='cuda').repeat(size[0])[:,None,None,None] * stride
@@ -126,7 +126,6 @@ class AnyNet(nn.Module):
     def forward(self, left, right):
 
         img_size = left.size()
-
         feats_l = self.feature_extraction(left)
         feats_r = self.feature_extraction(right)
         pred = []

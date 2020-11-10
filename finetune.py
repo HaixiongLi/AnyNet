@@ -14,17 +14,15 @@ import torch.backends.cudnn as cudnn
 import models.anynet
 
 parser = argparse.ArgumentParser(description='Anynet fintune on KITTI')
-parser.add_argument('--maxdisp', type=int, default=192,
-                    help='maxium disparity')
+parser.add_argument('--maxdisp', type=int, default=192,help='maxium disparity')
 parser.add_argument('--loss_weights', type=float, nargs='+', default=[0.25, 0.5, 1., 1.])
-parser.add_argument('--max_disparity', type=int, default=192)
+
 parser.add_argument('--maxdisplist', type=int, nargs='+', default=[12, 3, 3])
-parser.add_argument('--datatype', default='2015',
-                    help='datapath')
-parser.add_argument('--datapath', default=None, help='datapath')
+parser.add_argument('--datatype', default='2015',help='datapath')
+parser.add_argument('--datapath', default='/home/lab3/Datasets/kitti2015/training/', help='datapath')
 parser.add_argument('--epochs', type=int, default=300,
                     help='number of epochs to train')
-parser.add_argument('--train_bsize', type=int, default=6,
+parser.add_argument('--train_bsize', type=int, default=12,
                     help='batch size for training (default: 6)')
 parser.add_argument('--test_bsize', type=int, default=8,
                     help='batch size for testing (default: 8)')
@@ -43,13 +41,15 @@ parser.add_argument('--layers_3d', type=int, default=4, help='number of initial 
 parser.add_argument('--growth_rate', type=int, nargs='+', default=[4,1,1], help='growth rate in the 3d network')
 parser.add_argument('--spn_init_channels', type=int, default=8, help='initial channels for spnet')
 parser.add_argument('--start_epoch_for_spn', type=int, default=121)
-parser.add_argument('--pretrained', type=str, default='results/pretrained_anynet/checkpoint.tar',
+parser.add_argument('--pretrained', type=str, default='/home/lab3/work/lhx/code/AnyNet/checkpoint/kitti2015_ck/checkpoint.tar',
                     help='pretrained model path')
 parser.add_argument('--split_file', type=str, default=None)
 parser.add_argument('--evaluate', action='store_true')
 
 
 args = parser.parse_args()
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 if args.datatype == '2015':
     from dataloader import KITTIloader2015 as ls
@@ -117,7 +117,7 @@ def main():
         log.info('This is {}-th epoch'.format(epoch))
         adjust_learning_rate(optimizer, epoch)
 
-        train(TrainImgLoader, model, optimizer, log, epoch)
+        train(TrainImgLoader, model, optimizer, log, epoch)     #开始进行模型训练
 
         savefilename = args.save_path + '/checkpoint.tar'
         torch.save({
@@ -125,7 +125,6 @@ def main():
             'state_dict': model.state_dict(),
             'optimizer': optimizer.state_dict(),
         }, savefilename)
-
         if epoch % 1 ==0:
             test(TestImgLoader, model, log)
 
@@ -136,7 +135,7 @@ def main():
 def train(dataloader, model, optimizer, log, epoch=0):
 
     stages = 3 + args.with_spn
-    losses = [AverageMeter() for _ in range(stages)]
+    losses = [AverageMeter() for _ in range(stages)]        #？？
     length_loader = len(dataloader)
 
     model.train()
