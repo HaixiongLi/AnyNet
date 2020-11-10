@@ -1,5 +1,5 @@
 # Anytime Stereo Image Depth Estimation on Mobile Devices
-Thanks [mileyan/AnyNet](https://github.com/mileyan/AnyNet) for their great work.
+Thanks [noble-born/AnyNet](https://github.com/noble-born/AnyNet) for their great work.
 
 `predict.sh` has been added to generate disparities of two images and save them. Note that this model assume you to have **rectified images**.
 
