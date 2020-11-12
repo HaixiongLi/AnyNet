@@ -1,6 +1,9 @@
 import torch
 from tensorboardX import SummaryWriter
-import models.anynet
+
+from models import UNet
+from models import AnyNet
+
 import argparse
 
 parser = argparse.ArgumentParser(description='AnyNet with Flyingthings3d')
@@ -33,12 +36,25 @@ parser.add_argument('--split_file', type=str, default=None)
 
 args = parser.parse_args()
 
+def main():
+    global args
+
+    torch.manual_seed(1.0)
+    left = torch.randn(1, 3, 256, 512)
+    right = torch.randn(1, 3, 256, 512)
+    model = AnyNet(args)
+    with SummaryWriter(comment='AnyNet_model_structure')as writer:
+        writer.add_graph(model, (left,right))
 
 
-torch.manual_seed(1.0)
-left = torch.randn(1, 3, 256, 512)
-right = torch.randn(1, 3, 256, 512)
-model = models.anynet.AnyNet(args)
+    net = UNet(n_channels=3, n_classes=9, bilinear=True)
 
-with SummaryWriter(comment='Net')as w:
-    w.add_graph(model, (left, right,))
+    torch.manual_seed(2.0)
+    left = torch.randn(1, 3, 256, 512)
+    right = torch.randn(1, 3, 256, 512)
+
+    with SummaryWriter(comment='Unet_model_stracture') as w:
+        w.add_graph(net, (left,))
+
+if __name__ == '__main__':
+    main()
