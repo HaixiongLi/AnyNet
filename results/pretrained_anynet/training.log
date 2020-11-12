@@ -655,3 +655,167 @@
 [2020-11-10 09:07:11 main.py:83] INFO     Number of model parameters: 34629
 [2020-11-10 09:07:11 main.py:99] INFO     Not Resume
 [2020-11-10 09:07:11 main.py:103] INFO     This is 0-th epoch
+[2020-11-11 09:19:19 KITTIloader2015.py:33] INFO     [163  64  57  22  59  42 176 184 185   7 190  21 156 169  20   3  19  41
+  35  97 153 128 141 110 147  17  53 193  62 157  43 114  95 181 145  75
+ 168 107 143  92]
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 09:19:19 main_tensorboard.py:81] INFO     with_spn: False
+[2020-11-11 09:41:30 KITTIloader2015.py:33] INFO     [146  20  63 152 139   6  33  56   8   9 189 113  94 127 162  16 163  14
+ 155 153  81 164  95  97  60  99 158  74 128 108 120  66 179  76 130 141
+  49 183 175  89]
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 09:41:30 main_tensorboard.py:81] INFO     with_spn: False
+[2020-11-11 09:58:50 KITTIloader2015.py:33] INFO     [ 43 192 140  67  39  75 101  53 171  18  60 184 125  68   5 112  25  35
+  89  14  54  74 103  10  37  45 121 189 174  59 166 131 172 196 147  41
+ 195 107  56  90]
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 09:58:50 main_tensorboard.py:81] INFO     with_spn: False
+[2020-11-11 10:00:09 KITTIloader2015.py:33] INFO     [ 12 149  45 105  96  17  27  93 113  64  75  60 117 162 163  95 172  53
+ 129 124  18  63 110 165 161 132 171  94 154  30  28   2  34  47 167 121
+  73  33  65  50]
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 10:00:09 main_tensorboard.py:81] INFO     with_spn: False
+[2020-11-11 10:00:22 main_tensorboard.py:96] INFO     Number of model parameters: 34629
+[2020-11-11 10:00:22 main_tensorboard.py:112] INFO     Not Resume
+[2020-11-11 10:00:22 main_tensorboard.py:134] INFO     This is 0-th epoch
+[2020-11-11 10:01:31 KITTIloader2015.py:33] INFO     [106 142   5  60 127  29 126 131 144  55 104  67 108 116  58  35 158 187
+ 153 114  18  52 102 132 111 152 130  68  89 117 195 124  62   0 138 185
+ 182  56  85  65]
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 10:01:31 main_tensorboard.py:81] INFO     with_spn: False
+[2020-11-11 10:01:38 KITTIloader2015.py:33] INFO     [ 82  61  39 180 137 156 108 126 189 136  79 141  66 121 138 119 114 167
+  45 139  92  29 169  65   6  16 168 198 186 184 175 179 178 155  48 152
+ 113 163  15   9]
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 10:01:38 main_tensorboard.py:81] INFO     with_spn: False
+[2020-11-11 10:31:10 KITTIloader2015.py:33] INFO     [172  85 109 154 185   6  22  83 171 184  31  35 152 162 159  50  98  74
+ 168  62  44 111  34 192  32 182 150 199  92 170  20   5 113  28 166 163
+  87 133  41  19]
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     channels_3d: 4
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     datapath: /home/lab3/Datasets/kitti2015/training/
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     datatype: 2015
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     epochs: 300
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     growth_rate: [4, 1, 1]
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     init_channels: 1
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     layers_3d: 4
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     loss_weights: [0.25, 0.5, 1.0, 1.0]
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     lr: 0.0005
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     maxdisp: 192
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     maxdisplist: [12, 3, 3]
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     nblocks: 2
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     print_freq: 5
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     resume: None
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     save_path: results/pretrained_anynet
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     split_file: None
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     spn_init_channels: 8
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     test_bsize: 8
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     train_bsize: 12
+[2020-11-11 10:31:10 main_tensorboard.py:81] INFO     with_spn: False

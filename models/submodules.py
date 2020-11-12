@@ -47,23 +47,23 @@ class feature_extraction_conv(nn.Module):
 
         self.init_channels = init_channels
         nC = self.init_channels
-        downsample_conv = [nn.Conv2d(3,  nC, 3, 1, 1), # 512x256
-                                    preconv2d(nC, nC, 3, 2, 1)]
+        downsample_conv = [nn.Conv2d(3,  nC, 3, 1, 1),              #1
+                            preconv2d(nC, nC, 3, 2, 1)]             #2
         downsample_conv = nn.Sequential(*downsample_conv)
 
         inC = nC
         outC = 2*nC
-        block0 = self._make_block(inC, outC, nblock)
+        block0 = self._make_block(inC, outC, nblock)                #3,4,5
         self.block0 = nn.Sequential(downsample_conv, block0)
 
         nC = 2*nC
         self.blocks = []
         for i in range(2):
-            self.blocks.append(self._make_block((2**i)*nC,  (2**(i+1))*nC, nblock))
+            self.blocks.append(self._make_block((2**i)*nC,  (2**(i+1))*nC, nblock)) #6-8,9-11
 
         self.upblocks = []
         for i in reversed(range(2)):
-            self.upblocks.append(unetUp(nC*2**(i+1), nC*2**i, False))
+            self.upblocks.append(unetUp(nC*2**(i+1), nC*2**i, False))   #12-15,16-19
 
         self.blocks = nn.ModuleList(self.blocks)
         self.upblocks = nn.ModuleList(self.upblocks)
@@ -95,7 +95,59 @@ class feature_extraction_conv(nn.Module):
             downs[i] = self.upblocks[i-1](downs[i], downs[i-1])
         return downs
 
+class shared_feature_extraction_conv(nn.Module):
+    def __init__(self, init_channels,  nblock=2):
+        super(shared_feature_extraction_conv, self).__init__()
 
+        self.init_channels = init_channels
+        nC = self.init_channels
+        downsample_conv = [nn.Conv2d(3,  nC, 3, 1, 1), # 512x256    #1
+                                    preconv2d(nC, nC, 3, 2, 1)]     #2
+        downsample_conv = nn.Sequential(*downsample_conv)           #3,4,5
+
+        inC = nC
+        outC = 2*nC
+        block0 = self._make_block(inC, outC, nblock)                #6,7,8(1-2)
+        self.block0 = nn.Sequential(downsample_conv, block0)
+
+        nC = 2*nC
+        self.blocks = []
+        for i in range(2):
+            self.blocks.append(self._make_block((2**i)*nC,  (2**(i+1))*nC, nblock)) #9,10,11,(2-4,4-8)
+
+        self.upblocks = []
+        for i in reversed(range(2)):
+            self.upblocks.append(unetUp(nC*2**(i+1), nC*2**i, False))   #12-15,16-19
+
+        self.blocks = nn.ModuleList(self.blocks)
+        self.upblocks = nn.ModuleList(self.upblocks)
+
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
+            elif isinstance(m, nn.Linear):
+                nn.init.constant_(m.bias, 0)
+
+    def _make_block(self, inC, outC, nblock ):
+        model = []
+        model.append(nn.MaxPool2d(2,2))
+        for i in range(nblock):
+            model.append(preconv2d(inC, outC, 3, 1, 1))
+            inC = outC
+        return nn.Sequential(*model)
+
+
+    def forward(self, x):
+        downs = [self.block0(x)]
+        for i in range(2):
+            downs.append(self.blocks[i](downs[-1]))
+        downs = list(reversed(downs))
+        for i in range(1,3):
+            downs[i] = self.upblocks[i-1](downs[i], downs[i-1])
+        return downs
 
 def batch_relu_conv3d(in_planes, out_planes, kernel_size=3, stride=1, pad=1, bn3d=True):
     if bn3d:

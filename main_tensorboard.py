@@ -81,7 +81,19 @@ def main():
         log.info(str(key) + ': ' + str(value))
 
     model = models.anynet.AnyNet(args)
+    torch.save(model, './model_para.pth')
+
+
     model = nn.DataParallel(model).cuda()
+
+    torch.manual_seed(2.0)
+    left = torch.randn(1, 3, 256, 512)
+    right = torch.randn(1, 3, 256, 512)
+
+    with SummaryWriter(comment='AnyNet_model_stracture') as w:
+        w.add_graph(model, (left, right,))
+
+
     optimizer = optim.Adam(model.parameters(), lr=args.lr, betas=(0.9, 0.999))
     log.info('Number of model parameters: {}'.format(sum([p.data.nelement() for p in model.parameters()])))
 
@@ -103,12 +115,7 @@ def main():
     cudnn.benchmark = True
     start_full_time = time.time()
 
-
-
     train(TrainImgLoader, model, optimizer, log,n_train, TestImgLoader )     #开始进行模型训练
-
-
-
     test(TestImgLoader, model, log)
     log.info('full training time = {:.2f} Hours'.format((time.time() - start_full_time) / 3600))
 
@@ -118,7 +125,7 @@ def train(dataloader, model, optimizer, log, num_train, TestImgLoader):
     stages = 3 + args.with_spn
     losses = [AverageMeter() for _ in range(stages)]        #？？
     length_loader = len(dataloader)
-    writer = SummaryWriter()
+    writer = SummaryWriter(comment='AnyNet_train_log')
     global_step = 0
     for epoch in range(args.start_epoch, args.epochs):
         log.info('This is {}-th epoch'.format(epoch))

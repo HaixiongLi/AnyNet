@@ -48,7 +48,7 @@ class AnyNet(nn.Module):
 
         self.feature_extraction = feature_extraction_conv(self.init_channels,
                                       self.nblocks)
-
+        # print(self.feature_extraction)
         self.volume_postprocess = []
 
         for i in range(3):
