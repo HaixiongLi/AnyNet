@@ -43,7 +43,7 @@ def main():
     left = torch.randn(1, 3, 256, 512)
     right = torch.randn(1, 3, 256, 512)
     model = AnyNet(args)
-    with SummaryWriter(comment='AnyNet_model_structure')as writer:
+    with SummaryWriter(comment='New_shared_AnyNet_model_structure')as writer:
         writer.add_graph(model, (left,right))
 
 
@@ -51,7 +51,6 @@ def main():
 
     torch.manual_seed(2.0)
     left = torch.randn(1, 3, 256, 512)
-    right = torch.randn(1, 3, 256, 512)
 
     with SummaryWriter(comment='Unet_model_stracture') as w:
         w.add_graph(net, (left,))
