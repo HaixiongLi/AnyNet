@@ -1,8 +1,9 @@
 import torch
 from tensorboardX import SummaryWriter
 
-from models import UNet
-from models import AnyNet
+from models import shared_UNet
+from models.Net import SharedNet
+
 
 import argparse
 
@@ -26,7 +27,7 @@ parser.add_argument('--lr', type=float, default=5e-4,
                     help='learning rate')
 parser.add_argument('--with_spn', action='store_true', help='with spn network or not')
 parser.add_argument('--print_freq', type=int, default=5, help='print frequence')
-parser.add_argument('--init_channels', type=int, default=1, help='initial channels for 2d feature extractor')
+parser.add_argument('--init_channels', type=int, default=64, help='initial channels for 2d feature extractor')
 parser.add_argument('--nblocks', type=int, default=2, help='number of layers in each stage')
 parser.add_argument('--channels_3d', type=int, default=4, help='number of initial channels of the 3d network')
 parser.add_argument('--layers_3d', type=int, default=4, help='number of initial layers of the 3d network')
@@ -34,7 +35,13 @@ parser.add_argument('--growth_rate', type=int, nargs='+', default=[4,1,1], help=
 parser.add_argument('--spn_init_channels', type=int, default=8, help='initial channels for spnet')
 parser.add_argument('--split_file', type=str, default=None)
 
+parser.add_argument('--img_channels', type=int, default=3, help='The image channels')
+parser.add_argument('--num_classes', type=int, default=7, help='The number of output classes')
+
 args = parser.parse_args()
+
+
+
 
 def main():
     global args
@@ -42,18 +49,18 @@ def main():
     torch.manual_seed(1.0)
     left = torch.randn(1, 3, 256, 512)
     right = torch.randn(1, 3, 256, 512)
-    model = AnyNet(args)
+    # model = AnyNet(args)
+    model = SharedNet(args, bilinear=True)
     with SummaryWriter(comment='New_shared_AnyNet_model_structure')as writer:
         writer.add_graph(model, (left,right))
 
+    # net = SharedNet(args, bilinear=True)
 
-    net = UNet(n_channels=3, n_classes=9, bilinear=True)
-
-    torch.manual_seed(2.0)
-    left = torch.randn(1, 3, 256, 512)
-
-    with SummaryWriter(comment='Unet_model_stracture') as w:
-        w.add_graph(net, (left,))
+    # torch.manual_seed(2.0)
+    # left = torch.randn(1, 3, 256, 512)
+    #
+    # with SummaryWriter(comment='Unet_model_stracture') as w:
+    #     w.add_graph(net, (left,))
 
 if __name__ == '__main__':
     main()

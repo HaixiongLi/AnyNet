@@ -1,2 +1,1 @@
-from .Net import UNet
-from .Net import AnyNet
+from .Net import shared_UNet
